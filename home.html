@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Incredible India - Explore States</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #583003;
+        color: white;
+        padding: 1rem 2rem;
+      }
+      header .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      header nav ul {
+        display: flex;
+        list-style: none;
+      }
+      header nav ul li {
+        margin-left: 20px;
+      }
+      header nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+      header nav ul li a:hover {
+        color: #f39c12;
+      }
+
+      .hero {
+        position: relative;
+        text-align: center;
+        padding: 150px 20px;
+        color: white;
+        overflow: hidden;
+      }
+      .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url("https://www.asiaodysseytravel.com/images/asia-tours/banner/india-guide-banner-1920.jpg")
+          no-repeat center top/cover;
+        filter: blur(3px);
+        z-index: -1;
+      }
+      .hero h1 {
+        font-size: 4rem;
+        color: rgb(81, 33, 4);
+      }
+      .hero p {
+        font-size: 1.5rem;
+        margin: 15px 0;
+        color: rgb(68, 39, 2);
+      }
+      .btn {
+        background: #713b02;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: background 0.3s;
+      }
+      .btn:hover {
+        background: #9e4d01;
+      }
+
+      .states {
+        padding: 60px 20px;
+        text-align: center;
+      }
+      .states h2 {
+        margin-bottom: 40px;
+        font-size: 2rem;
+        color: #793b05;
+      }
+
+      /* Infinite scroll container */
+      .scroll-container {
+        display: flex;
+        overflow: hidden;
+        gap: 20px;
+      }
+
+      .scroll-content {
+        display: flex;
+        gap: 20px;
+        animation: scroll 30s linear infinite;
+      }
+
+      .scroll-container:hover .scroll-content {
+        animation-play-state: paused;
+      }
+
+      @keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+
+      .card {
+        flex: 0 0 auto;
+        width: 250px;
+        background: hsl(32, 88%, 70%);
+        border-radius: 10px;
+        overflow: hidden;
+        text-decoration: none;
+        color: inherit;
+        transition: transform 0.3s, background 0.3s;
+      }
+      .card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+      }
+      .card h3 {
+        margin: 15px;
+      }
+      .card:hover {
+        transform: scale(1.05);
+        background: hsl(32, 88%, 60%);
+      }
+
+      footer {
+        background: #583003;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+      }
+      @media (max-width: 768px) {
+        .hero h1 {
+          font-size: 2.5rem;
+        }
+        .hero p {
+          font-size: 1.2rem;
+        }
+        .card {
+          width: 200px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">Incredible India</div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="aboutUs.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Explore The Beauty of India</h1>
+      <p>From the Himalayas to the oceans — every state has a story to tell.</p>
+      <a href="#states" class="btn">Explore States</a>
+    </section>
+
+    <section class="states" id="states">
+      <h2>Top Destinations</h2>
+      <div class="scroll-container">
+        <div class="scroll-content" id="scrollContent">
+          <a href="gujarat.html" class="card">
+            <img
+              src="https://img.veenaworld.com/wp-content/uploads/2021/07/Gir-National-Park-Gujarat-How-to-Reach-Information-Timing-scaled.jpg?imwidth=1080"
+              alt="Gujarat"
+            />
+            <h3>Gujarat</h3>
+          </a>
+          <a href="rajasthan.html" class="card">
+            <img
+              src="https://cdn.wallpaperhub.app/cloudcache/a/8/6/2/e/b/a862ebaeeae2eac3b3af6223297d76c2caeabb85.jpg"
+              alt="Rajasthan"
+            />
+            <h3>Rajasthan</h3>
+          </a>
+          <a href="kerala.html" class="card">
+            <img
+              src="https://th.bing.com/th/id/OIP.ZYsMHOrs1mqWq5jaXziIOwHaFj?pid=ImgDetMain"
+              alt="Kerala"
+            />
+            <h3>Kerala</h3>
+          </a>
+          <a href="himachal.html" class="card">
+            <img
+              src="https://cdn.pixabay.com/photo/2017/10/02/08/12/himalayas-2808132_1280.jpg"
+              alt="Himachal Pradesh"
+            />
+            <h3>Himachal Pradesh</h3>
+          </a>
+          <a href="uttarakhand.html" class="card">
+            <img
+              src="https://www.panchtattva.com/wp-content/uploads/2021/11/Kedarnath.jpeg"
+              alt="Uttarakhand"
+            />
+            <h3>Uttarakhand</h3>
+          </a>
+
+          <!-- Duplicate for seamless scroll -->
+          <a href="gujarat.html" class="card">
+            <img
+              src="https://img.veenaworld.com/wp-content/uploads/2021/07/Gir-National-Park-Gujarat-How-to-Reach-Information-Timing-scaled.jpg?imwidth=1080"
+              alt="Gujarat"
+            />
+            <h3>Gujarat</h3>
+          </a>
+          <a href="rajasthan.html" class="card">
+            <img
+              src="https://cdn.wallpaperhub.app/cloudcache/a/8/6/2/e/b/a862ebaeeae2eac3b3af6223297d76c2caeabb85.jpg"
+              alt="Rajasthan"
+            />
+            <h3>Rajasthan</h3>
+          </a>
+          <a href="kerala.html" class="card">
+            <img
+              src="https://th.bing.com/th/id/OIP.ZYsMHOrs1mqWq5jaXziIOwHaFj?pid=ImgDetMain"
+              alt="Kerala"
+            />
+            <h3>Kerala</h3>
+          </a>
+          <a href="himachal.html" class="card">
+            <img
+              src="https://cdn.pixabay.com/photo/2017/10/02/08/12/himalayas-2808132_1280.jpg"
+              alt="Himachal Pradesh"
+            />
+            <h3>Himachal Pradesh</h3>
+          </a>
+          <a href="uttarakhand.html" class="card">
+            <img
+              src="https://www.panchtattva.com/wp-content/uploads/2021/11/Kedarnath.jpeg"
+              alt="Uttarakhand"
+            />
+            <h3>Uttarakhand</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Incredible India | Designed by a traveller 💛</p>
+    </footer>
+  </body>
+</html>

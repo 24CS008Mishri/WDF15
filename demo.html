@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gujarat - Incredible India</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: #fefae0;
+      color: #4e342e;
+    }
+
+    header {
+      background: #583003;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 2.2rem;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .content {
+      
+      background: rgba(0, 0, 0, 0.6);
+      margin: 40px auto;
+      padding: 20px;
+      max-width: 800px;
+      border-radius: 10px;
+    }
+
+     .content h2 {
+      margin-bottom: 15px;
+      color: #f7c23e;
+    }
+
+    .content p {
+      line-height: 1.6;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background-color: #f1e1c1;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-decoration: none;
+      color: #4e342e;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      padding: 15px;
+      font-size: 1.1rem;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    }
+
+    .back-btn {
+      display: block;
+      width: max-content;
+      margin: 30px auto;
+      padding: 12px 24px;
+      background-color: #f7c23e;
+      color: #4e342e;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+
+    .back-btn:hover {
+      background-color: #e0aa25;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #5d4037;
+      color: #fff8e1;
+      padding: 15px;
+      font-size: 0.9rem;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>Incredible India – Gujarat</header>
+
+  <div class="content">
+    <h2>Vibrant Land of Legends</h2>
+    <p>
+      Gujarat, located on the western coast of India, is known for its vibrant culture, historical monuments, and diverse landscapes.
+      From the majestic Gir National Park, home of the Asiatic lions, to the salt plains of the Rann of Kutch, Gujarat offers a rich blend of wildlife, festivals, handicrafts, and delicious cuisine.
+      It is also the birthplace of Mahatma Gandhi and holds many sites of spiritual and historical importance.
+    </p>
+  </div>
+
+  <div class="grid">
+    <a href="gujarat.html" class="card">
+      <img src="https://th.bing.com/th/id/OIP.jjdDCiF_XJgs5j6pc5S-mgHaEJ?w=316&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Adventure in Gujarat">
+      <h3>Adventurous Activities</h3>
+    </a>
+    <a href="gujarat.html" class="card">
+      <img src="https://th.bing.com/th/id/OIP.EyOvTmyJ3ZmhYe8lri1ZfQHaE8?w=294&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Places to visit">
+      <h3>Places to Visit</h3>
+    </a>
+    <a href="gujarat.html" class="card">
+      <img src="https://th.bing.com/th/id/OIP.JkMuYbisuLTrThOTVD0zFgHaDq?w=332&h=173&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Culture of Gujarat">
+      <h3>Culture</h3>
+    </a>
+  </div>
+
+  <a href="index.html" class="back-btn">← Back to Home</a>
+
+  <footer>
+    &copy; 2025 Incredible India | Gujarat Page
+  </footer>
+
+</body>
+</html>

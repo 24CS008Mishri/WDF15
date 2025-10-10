@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Register - Incredible India</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f9c37c;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .container {
+        background: #ffe0b2;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+        width: 90%;
+        max-width: 400px;
+      }
+      h2 {
+        text-align: center;
+        color: #7a3704;
+        margin-bottom: 20px;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="number"],
+      input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        border: 1px solid #999;
+        border-radius: 5px;
+      }
+      button {
+        width: 100%;
+        background-color: #713b02;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 10px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #9e4d01;
+      }
+      p {
+        text-align: center;
+        margin-top: 15px;
+      }
+      a {
+        color: #713b02;
+        text-decoration: none;
+      }
+      footer {
+        margin-top: 40px;
+        font-size: 0.9rem;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Register</h2>
+      <form id="registerForm" action="home.html">
+        <input type="text" id="fullname" placeholder="Full Name" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="number" id="phone" placeholder="+91 0000000000" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <input
+          type="password"
+          id="confirmPassword"
+          placeholder="Confirm Password"
+          required
+        />
+
+        <div>
+          <input type="radio" id="male" name="gender" value="male" required />
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label>
+          <input type="radio" id="other" name="gender" value="other" />
+          <label for="other">Other</label>
+        </div>
+        <br />
+
+        <button type="submit">Create Account</button>
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+      </form>
+    </div>
+
+    <footer>&copy; 2025 Incredible India | Registration Page</footer>
+
+    <script>
+      document
+        .getElementById("registerForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const fullName = document.getElementById("fullname").value.trim();
+          const email = document.getElementById("email").value.trim();
+          const phone = document.getElementById("phone").value.trim();
+          const password = document.getElementById("password").value;
+          const confirmPassword =
+            document.getElementById("confirmPassword").value;
+
+          const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+          if (!email.match(emailPattern)) {
+            alert("Please enter a valid email address.");
+            return;
+          }
+
+          if (password.length < 6) {
+            alert("Password must be at least 6 characters long.");
+            return;
+          }
+
+          if (password !== confirmPassword) {
+            alert("Passwords do not match!");
+            return;
+          }
+
+          // Store user info in localStorage (for login validation)
+          localStorage.setItem("registeredEmail", email);
+          localStorage.setItem("registeredPassword", password);
+
+          alert("✅ Successfully Registered!");
+          // Redirect to login page
+          window.location.href = "home.html";
+        });
+    </script>
+  </body>
+</html>

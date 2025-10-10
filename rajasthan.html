@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rajasthan - Incredible India</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      overflow-x: hidden;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+    }
+
+    .bg-image {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("https://th.bing.com/th/id/OIP.Cm9aog-hwi0HZK5AVFCf9QHaEV?w=358&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3") no-repeat center center/cover;
+      filter: blur(2px);
+      z-index: -1;
+    }
+
+    body {
+      text-align: center;
+      padding: 20px;
+    }
+
+    header {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-top: 20px;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: hsla(32, 92%, 46%, 0.763);
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin: 15px;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .content {
+      background: rgba(0, 0, 0, 0.6);
+      margin: 40px auto;
+      padding: 20px;
+      max-width: 800px;
+      border-radius: 10px;
+    }
+
+    .content h2 {
+      margin-bottom: 15px;
+      color: #f7c23e;
+    }
+
+    .content p {
+      line-height: 1.6;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #f7c23e;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .back-btn:hover {
+      background: #e0aa25;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-image"></div>
+
+  <header>Rajasthan</header>
+
+  <div class="content">
+    <h2>Majestic Realm of Kings</h2>
+    <p>
+      Rajasthan, located in the northwestern part of India, is famous for its royal heritage, magnificent forts, and colorful traditions.
+      From the golden sand dunes of the Thar Desert to the stunning palaces of Jaipur, Udaipur, and Jodhpur, Rajasthan offers a unique glimpse into India’s regal past and vibrant folk culture.
+      The state is renowned for its lively festivals, exquisite handicrafts, and flavorful cuisine.
+      It is also home to beautiful temples and wildlife sanctuaries, making it a must-visit destination for history lovers and adventure seekers alike.
+    </p>
+  </div>
+
+  <div class="grid">
+    <a href="rajasthan.html" class="card">
+      <img src="https://th.bing.com/th/id/OIP.-1EbUDRh_D9Fvges-pIuMQHaCY?w=306&h=112&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Rajasthan">
+      <h3>Adventurous Activities</h3>
+    </a>
+    <a href="rajasthan.html" class="card">
+      <img src="https://th.bing.com/th/id/OIP.KNpBwT0YaENhn4xHpJlb5wHaDt?w=311&h=175&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Rajasthan">
+      <h3>Places to visit</h3>
+    </a>
+    <a href="rajasthan.html" class="card">
+      <img src="https://th.bing.com/th/id/OIP.cDWQQhAryn9b6EAM8nfFzAHaE8?w=258&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Rajasthan">
+      <h3>Culture</h3>
+    </a>
+  </div>
+
+  <a href="home.html" class="back-btn">← Back to Home</a>
+
+  <footer>
+    &copy; 2025 Incredible India | Rajasthan Page
+  </footer>
+  
+</body>
+</html>

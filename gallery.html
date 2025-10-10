@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gallery - Incredible India</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        color: #4b2900;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #583003;
+        width: 100%;
+        color: white;
+        padding: 1rem 2rem;
+      }
+
+      header .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      header nav ul {
+        display: flex;
+        list-style: none;
+      }
+
+      header nav ul li {
+        margin-left: 20px;
+      }
+
+      header nav ul li a {
+        color: #ffffff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      header nav ul li a:hover {
+        color: #f39c12;
+      }
+      h1 {
+        margin-top: 30px;
+        text-align: center;
+        color: #4b1c00;
+        background-color: rgba(255, 223, 170, 0.8);
+        padding: 10px 30px;
+        border-radius: 12px;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 30px;
+        width: 90%;
+        max-width: 1200px;
+      }
+
+      .gallery img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        transition: transform 0.3s ease;
+      }
+
+      .gallery img:hover {
+        transform: scale(1.05);
+      }
+
+      .back-btn {
+        margin: 20px;
+        padding: 10px 20px;
+        background: #f7c23e;
+        color: #000;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 6px;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+        transition: background 0.3s;
+      }
+
+      .back-btn:hover {
+        background: #e0aa25;
+      }
+
+      footer {
+        background: #583003;
+        color: #ffffff;
+        text-align: center;
+        width: 100%;
+        padding: 20px;
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">Incredible India</div>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="aboutUs.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <h1>Gallery of Incredible India</h1>
+
+    <div class="gallery">
+      <img
+        src="https://th.bing.com/th/id/OIP.yquhPDIiNhefGiGHB6lzbgHaFQ?w=250&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+        alt="Temple"
+      />
+      <img
+        src="https://th.bing.com/th/id/OIP.H9Nm_ChvFqfXK8bFJmhxEQHaEt?w=266&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+        alt="temple"
+      />
+      <img
+        src="https://th.bing.com/th/id/OIP.JLEaiXL535EUjuHlmMvjgAHaE8?w=247&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+        alt="temple"
+      />
+      <img
+        src="https://th.bing.com/th/id/OIP.861VOaHK7c5OgAgO9MmT0QHaE9?w=260&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+        alt="temple"
+      />
+
+      <img
+        src="https://th.bing.com/th/id/OIP.z9diMydSqtmD96BZ094l6gHaE7?w=270&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+        alt="Backwaters"
+      />
+      <img
+        src="https://th.bing.com/th/id/OIP.KqDaN8ghMuLUVOapAJrtowHaFC?w=271&h=184&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+        alt="water falls"
+      />
+      <img
+        src="https://th.bing.com/th/id/OIP.gvOsJ9RMIX1mMUr3HUy_RAHaE6?w=255&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+        alt="river"
+      />
+      <img
+        src="https://th.bing.com/th/id/OIP.m7b-BGX062PvphKVRwFbEgHaFE?w=283&h=193&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+        alt="ganga river"
+      />
+
+      <img
+        src="https://th.bing.com/th/id/OIP.JDynay9CsYMJ69r412H5SAHaEt?w=237&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+        alt="food"
+      />
+      <img
+        src="https://th.bing.com/th/id/OIP.cHkB6b6bfsrbCGDI1rZ8igHaE8?w=294&h=196&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+        alt="desert"
+      />
+      <img
+        src="https://th.bing.com/th/id/OIP.CMiJRC_8-hwbXo5E2accXgHaEK?w=365&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+        alt="food"
+      />
+      <img
+        src="https://th.bing.com/th/id/OIP.H9fIxkiOCNR1UCKiIpjqnAHaEj?w=241&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+        alt="desert"
+      />
+
+      <img
+        src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=800&q=80"
+        alt="Palace"
+      />
+      <img
+        src="https://th.bing.com/th/id/OIP.5vbm2AOiULsVWrP8NQYTPQHaEU?w=286&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+        alt="place"
+      />
+      <img
+        src="https://th.bing.com/th/id/OIP.Mmpq-P32rRk7KEH71T1J4gHaEE?w=308&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+        alt="place"
+      />
+      <img
+        src="https://th.bing.com/th/id/OIP.nolG_jwRXPmDOY5FxtYKqgHaE8?w=220&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+        alt="place"
+      />
+
+      <img
+        src="https://th.bing.com/th/id/OIP.2ePagLTTpifbm6XSmXWqmAHaEo?w=266&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+        alt="classical dance"
+      />
+      <img
+        src="https://th.bing.com/th/id/OIP.FiPQgXowjNs6hGj3f4uxVQHaE8?w=308&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+        alt="folk dance"
+      />
+      <img
+        src="https://th.bing.com/th/id/OIP.Wa1jyMM3ffcZRkvPveG4jQHaFj?w=222&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+        alt="classical dance"
+      />
+      <img
+        src="https://th.bing.com/th/id/OIP.XSGqH8pIhPG9xeQYLB-V_wHaFj?w=241&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+        alt="folk dance"
+      />
+
+      <img
+        src="https://th.bing.com/th/id/OIP.iVap2YwdzIcB-2qc0yMlWQHaE7?w=286&h=190&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+        alt="mountain"
+      />
+      <img
+        src="https://th.bing.com/th/id/OIP.A0JXTn1nJy3_mdF0IjP_mAHaE2?w=290&h=189&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+        alt="beach"
+      />
+      <img
+        src="https://th.bing.com/th/id/OIP.Y3FajmtX3tV292xXrj2IJwHaEK?w=308&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+        alt="mountain"
+      />
+      <img
+        src="https://th.bing.com/th/id/OIP.VwWHIAVWo8Rz469OBdzQOQHaFj?w=179&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+        alt="beach"
+      />
+
+      <img
+        src="https://th.bing.com/th/id/OIP.foI3pe66oz1I1dcQHJvflwHaEK?w=273&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+        alt="Traditional Art"
+      />
+      <img
+        src="https://th.bing.com/th/id/OIP.ZTaD6wsFWsx8-z_dyVKLmQHaE8?w=266&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+        alt="painting"
+      />
+      <img
+        src="https://th.bing.com/th/id/OIP.RyHD_FFEdpKAOcDJyPIaKwHaFu?w=244&h=188&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+        alt="painting"
+      />
+      <img
+        src="https://th.bing.com/th/id/OIP.1gwRowvFRldSA0srIjvofAHaEh?w=301&h=183&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+        alt="painting"
+      />
+    </div>
+
+    <a href="home.html" class="back-btn">← Back to Home</a>
+
+    <footer>
+      <p>&copy; 2025 Incredible India | Gallery Page</p>
+    </footer>
+  </body>
+</html>

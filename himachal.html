@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Himachal Pradesh - Incredible India</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      overflow-x: hidden;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+    }
+
+    .bg-image {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("https://cdn.pixabay.com/photo/2017/09/27/13/50/spiti-2792127_1280.jpg") no-repeat center center/cover;
+      filter: blur(2px);
+      z-index: -1;
+    }
+
+    body {
+      text-align: center;
+      padding: 20px;
+    }
+
+    header {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-top: 20px;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: hsla(215, 89%, 56%, 0.763);
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin: 15px;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .content {
+      background: rgba(0, 0, 0, 0.6);
+      margin: 40px auto;
+      padding: 20px;
+      max-width: 800px;
+      border-radius: 10px;
+    }
+
+    .content h2 {
+      margin-bottom: 15px;
+      color: #f7c23e;
+    }
+
+    .content p {
+      line-height: 1.6;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #f7c23e;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .back-btn:hover {
+      background: #e0aa25;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-image"></div>
+
+  <header>Himachal Pradesh</header>
+
+  <div class="content">
+   <h2>Whispers of the Himalayas</h2>
+<p>
+  Himachal Pradesh, nestled in the western Himalayas of India, is known for its breathtaking mountains, lush valleys, and peaceful hill stations.
+  From the vibrant town of Manali and the colonial charm of Shimla to the spiritual atmosphere of Dharamshala and McLeod Ganj, Himachal offers a perfect blend of adventure and tranquility.
+  The state is a paradise for trekking, skiing, and nature lovers, with dense pine forests, glistening rivers, and apple orchards dotting its landscape.
+  Famous for its warm hospitality, colorful festivals, and unique handicrafts, Himachal Pradesh invites travelers to experience its rich culture and pristine natural beauty throughout the year.
+</p>
+  </div>
+
+  <div class="grid">
+    <a href="himachal.html" class="card">
+      <img src="https://th.bing.com/th/id/OIP.s4pI_FVCR6JPWLFdn4TqlQHaE8?w=283&h=189&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Himachal Pradesh">
+      <h3>Adventurous Activities</h3>
+    </a>
+    <a href="himachal.html" class="card">
+      <img src="https://www.tourism-of-india.com/blog/wp-content/uploads/2018/01/manali.jpg" alt="Himachal Pradesh">
+      <h3>Places to visit</h3>
+    </a>
+    <a href="himachal.html" class="card">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.izUf8yMev0XVmSV0Nq9OGwHaEi?pid=ImgDet&w=474&h=290&rs=1&o=7&rm=3" alt="Himachal Pradesh">
+      <h3>Culture</h3>
+    </a>
+  </div>
+
+  <a href="home.html" class="back-btn">← Back to Home</a>
+
+  <footer>
+    &copy; 2025 Incredible India | Himachal Pradesh Page
+  </footer>
+  
+</body>
+</html>
